@@ -1,0 +1,47 @@
+html,body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.main {
+  padding: 20;
+  text-align: center;
+}
+
+a {
+  color: #ED2771;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, tr {
+  text-align: left;
+}
+
+#debug-table {
+  border-collapse: collapse;
+}
+
+#debug-table td, #debug-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#debug-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#debug-table tr:hover {background-color: #ddd;}
+
+#debug-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #ED2771;
+  color: white;
+}

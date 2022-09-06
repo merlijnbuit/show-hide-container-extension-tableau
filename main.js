@@ -14,6 +14,12 @@ let container;
 // first lets wait for the page to load
 window.onload = (event) => {
   console.log('Page is fully loaded');
+
+  // show the parameters in the extension index.html
+  document.getElementById('objectToHide').innerHTML = objectToHide;
+  document.getElementById('parameterName').innerHTML = parameterName;
+  document.getElementById('hideValue').innerHTML = hideValue;
+
   // lets load the Extensions api.
   // when it is done loading we start our code. This is indicated by then(.
   tableau.extensions.initializeAsync({ configure: openConfig }).then(() => {
