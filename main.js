@@ -82,7 +82,7 @@ window.onload = (event) => {
       })
       .catch((error) => {
         switch (error.errorCode) {
-          case window.tableau.ErrorCodes.DialogClosedByUser:
+          case tableau.ErrorCodes.DialogClosedByUser:
             console.log('Dialog was closed by user');
             break;
           default:
