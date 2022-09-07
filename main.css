@@ -45,3 +45,25 @@ td, tr {
   background-color: #ED2771;
   color: white;
 }
+
+.btn {
+  margin-top: 10px;
+  padding: 5px 11px;
+  margin-bottom: 2px;
+  line-height: 13px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: #23B1EC;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #23B1EC;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
