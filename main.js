@@ -26,9 +26,9 @@ window.onload = (event) => {
     // hideValue = settings.hideValue ?? hideValue;
 
     // show the parameters in the extension index.html
-    // document.getElementById('objectToHide').innerHTML = objectToHide;
-    // document.getElementById('parameterName').innerHTML = parameterName;
-    // document.getElementById('hideValue').innerHTML = hideValue;
+    document.getElementById('objectToHide').innerHTML = objectToHide;
+    document.getElementById('parameterName').innerHTML = parameterName;
+    document.getElementById('hideValue').innerHTML = hideValue;
 
     // first we create an eventlistener for the parameter we want to listen to
     tableau.extensions.dashboardContent.dashboard.getParametersAsync().then((parameters) => {
