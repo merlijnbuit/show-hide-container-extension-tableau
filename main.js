@@ -20,16 +20,15 @@ window.onload = (event) => {
   tableau.extensions.initializeAsync({ configure: openConfig }).then(() => {
     console.log('Extensions API is loaded');
 
-    let settings = tableau.extensions.settings.getAll();
-    console.log(settings);
-    objectToHide = settings.objectToHide ?? objectToHide;
-    parameterName = settings.parameterName ?? parameterName;
-    hideValue = settings.hideValue ?? hideValue;
+    // let settings = tableau.extensions.settings.getAll();
+    // objectToHide = settings.objectToHide ?? objectToHide;
+    // parameterName = settings.parameterName ?? parameterName;
+    // hideValue = settings.hideValue ?? hideValue;
 
     // show the parameters in the extension index.html
-    document.getElementById('objectToHide').innerHTML = objectToHide;
-    document.getElementById('parameterName').innerHTML = parameterName;
-    document.getElementById('hideValue').innerHTML = hideValue;
+    // document.getElementById('objectToHide').innerHTML = objectToHide;
+    // document.getElementById('parameterName').innerHTML = parameterName;
+    // document.getElementById('hideValue').innerHTML = hideValue;
 
     // first we create an eventlistener for the parameter we want to listen to
     tableau.extensions.dashboardContent.dashboard.getParametersAsync().then((parameters) => {
@@ -99,21 +98,21 @@ window.onload = (event) => {
 };
 
 function saveSettings() {
-  tableau.extensions.settings.set(
-    'objectToHide',
-    document.getElementById('objectToHideInput').value
-  );
-  tableau.extensions.settings.set(
-    'parameterName',
-    document.getElementById('parameterNameInput').value
-  );
-  tableau.extensions.settings.set('hideValue', document.getElementById('hideValueInput').value);
-  tableau.extensions.settings
-    .saveAsync()
-    .then(() => {
-      document.getElementById('saveButton').innerHTML = 'Settings saved! Please reload.';
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+  // tableau.extensions.settings.set(
+  //   'objectToHide',
+  //   document.getElementById('objectToHideInput').value
+  // );
+  // tableau.extensions.settings.set(
+  //   'parameterName',
+  //   document.getElementById('parameterNameInput').value
+  // );
+  // tableau.extensions.settings.set('hideValue', document.getElementById('hideValueInput').value);
+  // tableau.extensions.settings
+  //   .saveAsync()
+  //   .then(() => {
+  //     document.getElementById('saveButton').innerHTML = 'Settings saved! Please reload.';
+  //   })
+  //   .catch((error) => {
+  //     console.log(error);
+  //   });
 }
